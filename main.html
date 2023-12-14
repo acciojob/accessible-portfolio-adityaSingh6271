@@ -1,16 +1,42 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Accessible Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <header>
+    <h1 role="heading">Portfolio</h1>
+    <nav role="navigation">
+      <ul role="list">
+        <li role="listitem"><a href="#about">About</a></li>
+        <li role="listitem"><a href="#projects">Projects</a></li>
+        <li role="listitem"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="https://static-00.iconduck.com/assets.00/web-developer-illustration-2005x2048-fal2biag.png" height="200px" alt="Profile Picture" role="img">
+      <p>Insert brief description about yourself here.</p>
+    </section>
+    
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul role="list">
+        <li role="listitem">Project 1</li>
+        <li role="listitem">Project 2</li>
+        <li role="listitem">Project 3</li>
+      </ul>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><a href= "mailto:singhaditya6271@gmail.com">Send Email</a></p>
+    </section>
+  </main>
 </body>
-
 </html>
